@@ -30,7 +30,7 @@ class MyApp(QWidget):
         self.intro()
     
     def intro(self):
-        self.msg.setText("Welcome to Tic tac toe!! enter any key to start")
+        self.msg.setText("Welcome to Tic tac toe!! Click any key to start")
     
     def moves(self, ch):
         self.draw_board()
