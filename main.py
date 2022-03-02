@@ -8,7 +8,7 @@ class MyApp(QWidget):
         super().__init__()
         
         uic.loadUi("app.ui", self)
-        
+        self.setWindowTitle("Qt Tic-Tac-Toe")
         # varibles
         self.board = ['','','','','','','','','','']
         self.startinggame = True
@@ -30,7 +30,7 @@ class MyApp(QWidget):
         self.intro()
     
     def intro(self):
-        self.msg.setText("Welcome to Tic tac toe!! Click any key to start")
+        self.msg.setText("Welcome to Tic Tac Toe!! Click any key to start")
     
     def moves(self, ch):
         self.draw_board()
@@ -205,10 +205,6 @@ class MyApp(QWidget):
 
     def whose_goes_first(self):
         return random.randint(1, 2)
-    
-
-
-
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
